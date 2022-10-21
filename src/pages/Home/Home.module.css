@@ -1,0 +1,40 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 48px;
+}
+
+.gridItem {
+  grid-column: span 12;
+}
+
+.section {
+  padding: 0 32px;
+}
+
+.featuredSection {
+  height: 500px;
+  background: linear-gradient(
+      60deg,
+      rgba(234, 254, 251, 0.7) 1%,
+      rgba(195, 221, 247, 0.88),
+      rgba(239, 225, 255, 1) 100%
+    ),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 225, 255, 0) 100%
+    );
+  background-blend-mode: overlay;
+  padding-top: 72px;
+  margin-top: -72px;
+  /* if width or max-width is not set to 100% in firefox, then the slider component overflows*/
+  width: 100%;
+}
+
+.featuredSectionTitle {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 44px;
+  margin-top: 32px;
+}

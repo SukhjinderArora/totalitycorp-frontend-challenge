@@ -1,0 +1,33 @@
+.navigationListContainer {
+  display: flex;
+}
+
+.navigationList {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navigationLink {
+  display: flex;
+  min-width: 64px;
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navigationLink:link,
+.navigationLink:visited {
+  color: #04111d;
+}
+
+.navigationLink:hover,
+.navigationLink:focus,
+.navigationLink:active {
+  color: rgba(4, 17, 29, 0.8);
+}
+
+.navigationIcon {
+  font-size: 30px;
+}
