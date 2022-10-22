@@ -1,0 +1,68 @@
+.container {
+  width: 415px;
+  height: 325px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: rgb(0 0 0 / 4%) 0px 4px 8px;
+  transition: box-shadow 0.25s ease-in-out 0s;
+}
+
+.coverImgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.coverImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  z-index: 50;
+  display: flex;
+}
+
+.link:hover .container {
+  box-shadow: rgb(0 0 0 / 10%) 0px 2px 8px;
+}
+
+.imgContainer {
+  width: 78px;
+  height: 78px;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 5px 10px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.itemNameContainer {
+  display: flex;
+  padding-left: 16px;
+  align-items: center;
+  gap: 4px;
+}
+
+.itemName {
+  font-size: 16px;
+  color: #04111d;
+  font-weight: 600;
+}

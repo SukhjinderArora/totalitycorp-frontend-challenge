@@ -16,7 +16,7 @@ const Slider = ({
   autoPlayInterval = 400,
 }) => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(
-    loop ? slidesPerGroup : 0
+    loop ? slidesPerView : 0
   );
   const [transitionEnabled, setTransitionEnabled] = useState(false);
   const [sliderItemWidth, setSliderItemWidth] = useState(0);
@@ -108,6 +108,8 @@ const Slider = ({
       ]
     : items;
 
+  console.log(sliderItems);
+
   const setSliderItemRef = (index, sliderItemsArray) => {
     if (loop && index === 0) {
       return firstSliderItemRef;
@@ -134,6 +136,7 @@ const Slider = ({
             transform: `translateX(${
               sliderItemWidth * activeSlideIndex * -1
             }px)`,
+            marginBottom: "2px",
           }}
         >
           {sliderItems.map((item, index, array) => {
@@ -144,11 +147,11 @@ const Slider = ({
                 data-slide-index={
                   !loop
                     ? index
-                    : index < slidesPerGroup
-                    ? array.length - 2 * slidesPerGroup - slidesPerGroup + index
-                    : index > array.length - slidesPerGroup - 1
-                    ? index - items.length - slidesPerGroup
-                    : index - slidesPerGroup
+                    : index < slidesPerView
+                    ? array.length - 2 * slidesPerView - slidesPerView + index
+                    : index > array.length - slidesPerView - 1
+                    ? index - items.length - slidesPerView
+                    : index - slidesPerView
                 }
               >
                 <div
