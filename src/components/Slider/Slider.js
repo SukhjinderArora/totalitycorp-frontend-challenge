@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, Children } from "react";
 
 import useInView from "../../hooks/useInView";
 
@@ -11,6 +11,7 @@ const Slider = ({
   loop,
   breakpoints,
   items,
+  children,
   autoPlay = false,
   autoPlayInterval = 400,
 }) => {
@@ -30,6 +31,8 @@ const Slider = ({
     root: sliderContainerRef.current,
     threshold: 1.0,
   });
+
+  items = items || Children.toArray(children);
 
   useEffect(() => {
     if (firstSliderItemRef.current) {

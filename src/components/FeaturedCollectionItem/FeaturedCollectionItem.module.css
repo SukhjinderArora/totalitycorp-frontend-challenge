@@ -1,0 +1,64 @@
+.container {
+  width: 310px;
+  height: 310px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  position: relative;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease-in-out;
+}
+
+.itemLink:hover .img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.itemDescriptionContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  color: #fff;
+  padding: 0 16px;
+  padding-bottom: 16px;
+}
+
+.itemHeadingContainer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.itemHeading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.itemPrice {
+  font-size: "14px";
+  font-weight: "500";
+}
