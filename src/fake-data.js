@@ -291,3 +291,153 @@ export const newCollections = [
     verified: true,
   },
 ];
+
+export const spotlightCollections = [
+  {
+    id: 1,
+    img: "https://i.seadn.io/gae/TLm9cerYNXvYB-OMUUWt5_agr4zD_zOchuc57DQY_JXNfCJu-Cu6CmABgKci4hRbaSZc8gJzmM7PIkukzNi_IDTf717Fd8aoFS5h9w?auto=format&w=128",
+    coverImg:
+      "https://i.seadn.io/gae/TLm9cerYNXvYB-OMUUWt5_agr4zD_zOchuc57DQY_JXNfCJu-Cu6CmABgKci4hRbaSZc8gJzmM7PIkukzNi_IDTf717Fd8aoFS5h9w?auto=format&w=1920",
+    name: "Dreams by Joshua Bagley",
+    verified: true,
+  },
+  {
+    id: 2,
+    img: "https://i.seadn.io/gae/Ygx-6bNAU-_b0dXIapV2oHAk713cpWtIj5HZDxBk4iFuuxhdMce-ddeNz2FItpgCenoCSGrII_OcUSwM7klPQE5WC4DeYCU8spiS7g?auto=format&w=128",
+    coverImg:
+      "https://i.seadn.io/gae/BGrqMygtlex-RdX-Bwcsxeesr_wFBkVuhQnD3pO_QvhybIkmM17Jbox3LeLOPR7J0yWz29tlcOmJMAVfpSa-UCjm-JYwOrP9bcQEFw?auto=format&w=1920",
+    name: "Aotearoa Dreaming - New Zealand Skies",
+    verified: false,
+  },
+  {
+    id: 3,
+    img: "https://i.seadn.io/gae/XPUsbUKhuEnh2icp9tRceQlbtjVpwHX2frs3V6Z-hUdk8Sca3BulnFGmQ19rHF9wMyU2Nw_DmAHFsGlT1OhQ-lCProWDaFD_Hipu?auto=format&w=128",
+    coverImg:
+      "https://i.seadn.io/gae/XPUsbUKhuEnh2icp9tRceQlbtjVpwHX2frs3V6Z-hUdk8Sca3BulnFGmQ19rHF9wMyU2Nw_DmAHFsGlT1OhQ-lCProWDaFD_Hipu?auto=format&w=1920",
+    name: "Synthetic Dreams by Refik Anadol",
+    verified: true,
+  },
+  {
+    id: 4,
+    img: "https://i.seadn.io/gae/owGZ4PFshV46PPd-g2wIbqnZgcTY_WHgG9ledIRAKqOrpK-foWH5e7b4cujZofvrpATUDATYcoR8bbq0kUbcrUD3d39dCPztEAKfqPE?auto=format&w=128",
+    coverImg:
+      "https://i.seadn.io/gae/leNnA7N8rVGnFUP8zC6kY4XH3BxBTf9X19Z6fFDJGw1Z7lxv5-YDHlHON9CSfNrLl6gEhAtqRNOvICAeP71-8wSoqEfTNSwqwIeq9UM?auto=format&w=1920",
+    name: "Tinted Dreams Collection",
+    verified: true,
+  },
+  {
+    id: 5,
+    img: "https://i.seadn.io/gae/DlGccUP5Ekd_lk5LqmaQrvzUyUmQ7UNVG0zO4feDGWG8mQlF57FCoKE2kYFFmPBDuW6SQoPWbdiStx4rfq5E8d-0yk6f3rDJtFtX?auto=format&w=128",
+    coverImg:
+      "https://i.seadn.io/gae/1enW06S-AyHE6dXrxfxUNDoVU7GnHXTXCb53lTiAHERHskZwsYtl6dAenU4hIB9vVGATNTRgB5LRkb4kIsiaxPNVrEf7TDBmP8GWAA?auto=format&w=1920",
+    name: "Dreamers by Yugal",
+    verified: true,
+  },
+  {
+    id: 6,
+    img: "https://i.seadn.io/gae/cudwgobx9TbpyYiT_kAKTVxDOg_JCgdxqUDinSMZoFSNAeDxXxpwatNmN2deIGM1PJGKMRJCW-8xDLdEEi8SjwcKXirD-kW1MfdI7no?auto=format&w=128",
+    coverImg:
+      "https://i.seadn.io/gae/I5Y_-HBlB4hTQFM87AzQW4Guqt809TLgOadaaky980hfn8cxSITbaZpRZ59cZXKe7F1_tQ7dnoYqSKRfKh1j3JTi6YEdtmVMHwJqHA?auto=format&w=1920",
+    name: "Beauty in Dreamland",
+    verified: true,
+  },
+];
+
+export const nftPosts = [
+  {
+    id: 1,
+    name: "What are blockchain gas fees?",
+    coverImg:
+      "https://opensea.io/static/images/learn-center//what-are-gas-fees.png",
+  },
+  {
+    id: 2,
+    name: "How to buy an NFT",
+    coverImg:
+      "https://opensea.io/static/images/learn-center//how-to-buy-nft.png",
+  },
+  {
+    id: 3,
+    name: "How to create an NFT on OpenSea",
+    coverImg:
+      "https://opensea.io/static/images/learn-center//how-to-create-nft.png",
+  },
+  {
+    id: 4,
+    name: "How to sell an NFT using OpenSea",
+    coverImg:
+      "https://opensea.io/static/images/learn-center//who-is-opensea.png",
+  },
+  {
+    id: 5,
+    name: "What is minting?",
+    coverImg:
+      "https://opensea.io/static/images/learn-center//what-is-minting.png",
+  },
+  {
+    id: 6,
+    name: "Who is OpenSea?",
+    coverImg:
+      "https://opensea.io/static/images/learn-center//who-is-opensea.png",
+  },
+  {
+    id: 7,
+    name: "What is an NFT?",
+    coverImg: "https://opensea.io/static/images/learn-center//what-is-nft.png",
+  },
+  {
+    id: 8,
+    name: "What is a crypto wallet?",
+    coverImg:
+      "https://opensea.io/static/images/learn-center//what-is-crypto-wallet.png",
+  },
+];
+
+export const categories = [
+  {
+    id: 1,
+    coverImg: "https://opensea.io/static/images/categories/art.png",
+    name: "Art",
+  },
+  {
+    id: 2,
+    coverImg: "https://opensea.io/static/images/categories/music.png",
+    name: "Music",
+  },
+  {
+    id: 3,
+    coverImg: "https://opensea.io/static/images/categories/trading-cards.png",
+    name: "Trading Cards",
+  },
+  {
+    id: 4,
+    coverImg: "https://opensea.io/static/images/categories/collectibles.png",
+    name: "Collectibles",
+  },
+  {
+    id: 5,
+    coverImg:
+      "https://opensea.io/static/images/categories/photography-category.png",
+    name: "Photography",
+  },
+  {
+    id: 6,
+    coverImg: "https://opensea.io/static/images/categories/utility.png",
+    name: "Utility",
+  },
+  {
+    id: 7,
+    coverImg: "https://opensea.io/static/images/categories/domain-names.png",
+    name: "Domain Names",
+  },
+  {
+    id: 8,
+    coverImg: "https://opensea.io/static/images/categories/sports.png",
+    name: "Sports",
+  },
+  {
+    id: 9,
+    coverImg: "https://opensea.io/static/images/categories/virtual-worlds.png",
+    name: "Virtual Worlds",
+  },
+];

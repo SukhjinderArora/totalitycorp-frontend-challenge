@@ -1,0 +1,46 @@
+.card {
+  width: 415px;
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 / 8%) 0px 4px 8px;
+  background-color: rgb(255, 255, 255);
+}
+
+.link:hover .card {
+  box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
+  transition: all 0.1s ease 0s;
+}
+
+.imgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 78%;
+  overflow: hidden;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.headerContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 22%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardHeading {
+  color: #04111d;
+  font-size: 20px;
+  font-weight: 600;
+}

@@ -1,6 +1,6 @@
 import { ReactComponent as VerifiedIcon } from "../../assets/icons/verified.svg";
 
-import styles from "./NewCollectionItem.module.css";
+import styles from "./CollectionItem.module.css";
 
 const NewCollectionItem = ({ item }) => {
   return (

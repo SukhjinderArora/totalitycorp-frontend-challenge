@@ -3,16 +3,20 @@ import { useState } from "react";
 import Slider from "../../components/Slider/Slider";
 import FeaturedCollectionItem from "../../components/FeaturedCollectionItem/FeaturedCollectionItem";
 import CollectionStats from "../../components/CollectionStats/CollectionStats";
+import CollectionItem from "../../components/CollectionItem/CollectionItem";
+import NFTCard from "../../components/NFTCard/NFTCard";
 
 import {
   featuredCollection,
   trendingCollections,
   topCollections,
   newCollections,
+  spotlightCollections,
+  nftPosts,
+  categories,
 } from "../../fake-data";
-
 import styles from "./Home.module.css";
-import NewCollectionItem from "../../components/NewCollectionItem/NewCollectionItem";
+import Category from "../../components/Category/Category";
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState("trending");
@@ -108,9 +112,58 @@ const Home = () => {
             autoPlay={false}
           >
             {newCollections.map((item) => (
-              <NewCollectionItem item={item} key={item.id} />
+              <CollectionItem item={item} key={item.id} />
             ))}
           </Slider>
+        </div>
+      </section>
+      <section className={`${styles.section} ${styles.gridItem}`}>
+        <h2 className={styles.newCollectionsHeader}>Dreamers spotlight</h2>
+        <div>
+          <Slider
+            spaceBetween="16"
+            slidesPerView={3}
+            slidesPerGroup={1}
+            loop={true}
+            autoPlay={false}
+          >
+            {spotlightCollections.map((item) => (
+              <CollectionItem item={item} key={item.id} />
+            ))}
+          </Slider>
+        </div>
+      </section>
+      <section className={`${styles.section} ${styles.gridItem}`}>
+        <div className={styles.sectionNFTHeader}>
+          <div>
+            <h2 className={styles.newCollectionsHeader}>NFT 101</h2>
+            <p className={styles.sectionNFTDescription}>
+              Get comfortable with the basics.
+            </p>
+          </div>
+          <button className={styles.filterBtn}>Learn more</button>
+        </div>
+        <div>
+          <Slider
+            spaceBetween="16"
+            slidesPerView={3}
+            slidesPerGroup={2}
+            loop={true}
+            autoPlay={true}
+            autoPlayInterval={4000}
+          >
+            {nftPosts.map((item) => (
+              <NFTCard item={item} key={item.id} />
+            ))}
+          </Slider>
+        </div>
+      </section>
+      <section className={`${styles.section} ${styles.gridItem}`}>
+        <h2 className={styles.newCollectionsHeader}>Browse by category</h2>
+        <div className={styles.categoriesContainer}>
+          {categories.map((category) => (
+            <Category category={category} key={category.id} />
+          ))}
         </div>
       </section>
     </main>

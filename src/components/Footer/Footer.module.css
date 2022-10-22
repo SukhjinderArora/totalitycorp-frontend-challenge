@@ -1,0 +1,9 @@
+.footer {
+  background-color: #1868b7;
+  margin-top: 48px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -8,10 +8,25 @@
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 12px;
-  /* border: 2px solid rgb(229, 232, 235); */
   box-shadow: rgb(229 232 235 / 0%) 0px 1px 0px 0px;
+  border: 2px solid transparent;
   padding: 12px;
   gap: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.formGroup:hover,
+.formGroup:focus-within {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.borderVisible {
+  border-color: rgb(229, 232, 235);
+  transition: border-color 0.2s ease-in-out;
+}
+
+.borderVisible:focus-within {
+  border-color: rgb(151, 151, 151);
 }
 
 .searchIcon {

@@ -13,7 +13,7 @@ const Slider = ({
   items,
   children,
   autoPlay = false,
-  autoPlayInterval = 400,
+  autoPlayInterval = 2000,
 }) => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(
     loop ? slidesPerView : 0
@@ -108,8 +108,6 @@ const Slider = ({
       ]
     : items;
 
-  console.log(sliderItems);
-
   const setSliderItemRef = (index, sliderItemsArray) => {
     if (loop && index === 0) {
       return firstSliderItemRef;
@@ -136,7 +134,7 @@ const Slider = ({
             transform: `translateX(${
               sliderItemWidth * activeSlideIndex * -1
             }px)`,
-            marginBottom: "2px",
+            marginBottom: "3px",
           }}
         >
           {sliderItems.map((item, index, array) => {

@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import styles from "./SearchForm.module.css";
 
-const SearchForm = () => {
+const SearchForm = ({ borderVisible }) => {
   const [searchInput, setSearchInput] = useState("");
 
   const handleSearch = (evt) => {
@@ -11,7 +11,11 @@ const SearchForm = () => {
 
   return (
     <form className={styles.form}>
-      <div className={styles.formGroup}>
+      <div
+        className={`${styles.formGroup} ${
+          borderVisible ? styles.borderVisible : ""
+        }`}
+      >
         <span className={`material-symbols-outlined ${styles.searchIcon}`}>
           search
         </span>

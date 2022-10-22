@@ -4,7 +4,16 @@
   align-items: center;
   padding: 0 32px;
   height: 72px;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #fff;
+  box-shadow: rgb(229 232 235) 0px 1px 0px 0px;
+}
+
+.transparent {
+  background: transparent;
+  box-shadow: none;
 }
 
 .logo {
