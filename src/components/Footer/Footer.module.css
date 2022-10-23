@@ -154,6 +154,12 @@
   font-weight: 500;
 }
 
+.navigation .flexCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .companyInfo .logo {
   width: 45px;
   height: 45px;

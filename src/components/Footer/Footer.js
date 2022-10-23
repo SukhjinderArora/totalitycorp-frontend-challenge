@@ -111,7 +111,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className={styles.flexCol}>
             <div>
               <h3>My Account</h3>
               <ul>
