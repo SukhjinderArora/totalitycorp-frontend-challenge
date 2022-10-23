@@ -31,3 +31,76 @@
 .navigationIcon {
   font-size: 30px;
 }
+
+.listItem {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  transition: all 0.3s ease-in;
+  transform: translateY(5px);
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 10px;
+  min-width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.listItem:hover > .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(20px);
+}
+
+.dropdownItem {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  color: #04111d;
+  padding: 18px 12px 18px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in;
+  align-items: center;
+  gap: 12px;
+}
+
+.dropdownItem:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.dropdownLink,
+.dropdownLink:link,
+.dropdownLink:visited {
+  color: #04111d;
+  text-decoration: none;
+}
+
+.dropdownItem > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdownItem > div > span {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdownIcon {
+  font-size: 24px;
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+}
+
+.filledIcon {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+}
+
+.dropdownItem > div .dropdownIcon {
+  font-size: 16px;
+}
