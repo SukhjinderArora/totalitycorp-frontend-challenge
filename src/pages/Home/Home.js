@@ -37,7 +37,7 @@ const Home = () => {
             slidesPerView={4}
             slidesPerGroup={4}
             loop={true}
-            autoPlay={false}
+            autoPlay={true}
             autoPlayInterval={4000}
             breakpoints={{
               320: {
