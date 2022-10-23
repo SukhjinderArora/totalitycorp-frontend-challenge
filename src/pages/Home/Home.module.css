@@ -171,3 +171,12 @@
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 1150px) {
+  .statsCollection {
+    grid-column: span 12;
+  }
+  .statsCollectionRow2 {
+    display: none;
+  }
+}
