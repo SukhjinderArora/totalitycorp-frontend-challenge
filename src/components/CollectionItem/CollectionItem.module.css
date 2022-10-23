@@ -71,7 +71,7 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 700px) {
   .itemNameContainer {
     padding-left: 4px;
     max-width: 60%;

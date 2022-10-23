@@ -52,7 +52,7 @@ const Slider = ({
   useEffect(() => {
     if (breakpoints) {
       Object.keys(breakpoints).forEach((breakpoint) => {
-        if (Number(breakpoint) && deviceWidth >= breakpoint) {
+        if (Number(breakpoint) && deviceWidth >= Number(breakpoint)) {
           setSlidesPerView(
             (prev) => breakpoints[breakpoint].slidesPerView || prev
           );

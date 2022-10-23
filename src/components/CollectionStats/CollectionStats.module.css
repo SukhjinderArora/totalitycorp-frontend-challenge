@@ -87,7 +87,7 @@
   color: #04111d;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 700px) {
   .colHeading2 {
     display: none;
   }

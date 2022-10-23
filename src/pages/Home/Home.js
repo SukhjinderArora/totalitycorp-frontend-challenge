@@ -165,6 +165,16 @@ const Home = () => {
             loop={true}
             autoPlay={true}
             autoPlayInterval={4000}
+            breakpoints={{
+              100: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+              },
+              1366: {
+                slidesPerView: 3,
+                slidesPerGroup: 2,
+              },
+            }}
           >
             {nftPosts.map((item) => (
               <NFTCard item={item} key={item.id} />
