@@ -86,3 +86,34 @@
   font-weight: 600;
   color: #04111d;
 }
+
+@media screen and (max-width: 599px) {
+  .colHeading2 {
+    display: none;
+  }
+  .colHeading1 {
+    width: 80%;
+  }
+  .colHeading2 {
+    width: 20%;
+  }
+  .rowId {
+    font-size: 16px;
+    margin-right: 12px;
+  }
+  .imgContainer {
+    width: 60px;
+    height: 60px;
+  }
+  .descriptionText {
+    margin-left: 12px;
+    font-size: 14px;
+    max-width: 140px;
+  }
+  .col2 {
+    display: none;
+  }
+  .col3 {
+    font-size: 14px;
+  }
+}

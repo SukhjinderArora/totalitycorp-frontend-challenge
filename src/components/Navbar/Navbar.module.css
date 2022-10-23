@@ -24,3 +24,13 @@
   max-width: 500px;
   width: 100%;
 }
+
+@media screen and (max-width: 599px) {
+  .navigation {
+    height: 68px;
+    padding: 0 16px;
+  }
+  .searchForm {
+    display: none;
+  }
+}

@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className={styles.searchForm}>
         <SearchForm borderVisible={!isScrolledToTop} />
       </div>
-      <div>
+      <div className={styles.navigationList}>
         <NavigationList />
       </div>
     </nav>

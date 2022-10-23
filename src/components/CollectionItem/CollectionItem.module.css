@@ -70,3 +70,10 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+@media screen and (max-width: 599px) {
+  .itemNameContainer {
+    padding-left: 4px;
+    max-width: 60%;
+  }
+}

@@ -203,3 +203,43 @@
 .copyrightContainer .policy:nth-of-type(2) {
   margin-left: 16px;
 }
+
+@media screen and (max-width: 599px) {
+  .footer {
+    margin-top: 15px;
+    padding: 15px 30px;
+  }
+  .flexContainer {
+    flex-direction: column;
+  }
+  .newsletter {
+    padding: 0;
+    text-align: center;
+  }
+  .socials {
+    padding-left: 0;
+    text-align: center;
+  }
+  .companyInfo {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .navigation {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+  }
+  .navigation > div {
+    min-width: 50%;
+    text-align: center;
+  }
+  .navigation > div:nth-child(3),
+  .navigation > div:nth-child(4) {
+    margin-top: 30px;
+  }
+  .copyrightContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+}

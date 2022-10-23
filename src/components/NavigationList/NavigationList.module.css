@@ -104,3 +104,23 @@
 .dropdownItem > div .dropdownIcon {
   font-size: 16px;
 }
+
+.navigationListMobile {
+  display: none;
+}
+
+@media screen and (max-width: 599px) {
+  .navigationList {
+    display: none;
+  }
+  .navigationListMobile {
+    display: flex;
+  }
+  .navigationListMobile .navigationIcon {
+    font-size: 34px;
+  }
+  .navigationListMobile .navigationLink {
+    min-width: auto;
+    padding: 0 8px;
+  }
+}

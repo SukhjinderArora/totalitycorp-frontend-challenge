@@ -1,13 +1,14 @@
 import { useRef, useState, useEffect, Children } from "react";
 
 import useInView from "../../hooks/useInView";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 import styles from "./Slider.module.css";
 
 const Slider = ({
-  slidesPerView,
-  spaceBetween,
-  slidesPerGroup,
+  slidesPerView: initialSliderPerView,
+  spaceBetween: initialSpaceBetween,
+  slidesPerGroup: initialSliderPerGroup,
   loop,
   breakpoints,
   items,
@@ -15,12 +16,17 @@ const Slider = ({
   autoPlay = false,
   autoPlayInterval = 2000,
 }) => {
+  const [slidesPerView, setSlidesPerView] = useState(initialSliderPerView);
+  const [slidesPerGroup, setSlidesPerGroup] = useState(initialSliderPerGroup);
+  const [spaceBetween, setSpaceBetween] = useState(initialSpaceBetween);
   const [activeSlideIndex, setActiveSlideIndex] = useState(
     loop ? slidesPerView : 0
   );
   const [transitionEnabled, setTransitionEnabled] = useState(false);
   const [sliderItemWidth, setSliderItemWidth] = useState(0);
   const sliderContainerRef = useRef(null);
+
+  const { width: deviceWidth } = useWindowDimensions();
 
   const { inView: lastSliderItemInView, ref: lastSliderItemRef } = useInView({
     root: sliderContainerRef.current,
@@ -42,6 +48,24 @@ const Slider = ({
       setTransitionEnabled(true);
     }, 100);
   }, [firstSliderItemRef]);
+
+  useEffect(() => {
+    if (breakpoints) {
+      Object.keys(breakpoints).forEach((breakpoint) => {
+        if (Number(breakpoint) && deviceWidth >= breakpoint) {
+          setSlidesPerView(
+            (prev) => breakpoints[breakpoint].slidesPerView || prev
+          );
+          setSlidesPerGroup(
+            (prev) => breakpoints[breakpoint].slidesPerGroup || prev
+          );
+          setSpaceBetween(
+            (prev) => breakpoints[breakpoint].spaceBetween || prev
+          );
+        }
+      });
+    }
+  }, [deviceWidth, breakpoints]);
 
   useEffect(() => {
     let intervalID;

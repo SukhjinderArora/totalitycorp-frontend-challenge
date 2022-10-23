@@ -37,8 +37,18 @@ const Home = () => {
             slidesPerView={4}
             slidesPerGroup={4}
             loop={true}
-            autoPlay={true}
+            autoPlay={false}
             autoPlayInterval={4000}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+              },
+              1366: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+              },
+            }}
           >
             {featuredCollection.map((item, index) => (
               <FeaturedCollectionItem item={item} key={item.id} />
@@ -85,7 +95,9 @@ const Home = () => {
             <div className={styles.statsCollection}>
               <CollectionStats stats={trendingCollections.slice(0, 5)} />
             </div>
-            <div className={styles.statsCollection}>
+            <div
+              className={`${styles.statsCollection} ${styles.statsCollectionRow2}`}
+            >
               <CollectionStats stats={trendingCollections.slice(-5)} />
             </div>
           </>
@@ -95,7 +107,9 @@ const Home = () => {
             <div className={styles.statsCollection}>
               <CollectionStats stats={topCollections.slice(0, 5)} />
             </div>
-            <div className={styles.statsCollection}>
+            <div
+              className={`${styles.statsCollection} ${styles.statsCollectionRow2}`}
+            >
               <CollectionStats stats={topCollections.slice(-5)} />
             </div>
           </>

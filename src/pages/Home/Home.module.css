@@ -143,3 +143,31 @@
   gap: 16px;
   row-gap: 24px;
 }
+
+@media screen and (max-width: 599px) {
+  .featuredSectionTitle {
+    font-size: 32px;
+  }
+  .categoriesContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .statsCollection {
+    grid-column: span 12;
+  }
+  .statsCollectionRow2 {
+    display: none;
+  }
+  .tabContainer {
+    gap: 16px;
+  }
+  .tabBtn {
+    font-size: 16px;
+  }
+  .filterBtn {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+  .newCollectionsHeader {
+    font-size: 20px;
+  }
+}

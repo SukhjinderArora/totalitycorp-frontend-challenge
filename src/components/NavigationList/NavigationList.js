@@ -146,7 +146,7 @@ const NavigationList = () => {
           <Dropdown className={styles.dropdown}>
             <DropdownItem className={styles.dropdownItem}>
               <span
-                class={`material-symbols-outlined ${styles.dropdownIcon} ${styles.filledIcon}`}
+                className={`material-symbols-outlined ${styles.dropdownIcon} ${styles.filledIcon}`}
               >
                 person
               </span>
@@ -155,7 +155,9 @@ const NavigationList = () => {
               </a>
             </DropdownItem>
             <DropdownItem className={styles.dropdownItem}>
-              <span class={`material-symbols-outlined ${styles.dropdownIcon}`}>
+              <span
+                className={`material-symbols-outlined ${styles.dropdownIcon}`}
+              >
                 favorite
               </span>
               <a href="/" className={styles.dropdownLink}>
@@ -164,7 +166,7 @@ const NavigationList = () => {
             </DropdownItem>
             <DropdownItem className={styles.dropdownItem}>
               <span
-                class={`material-symbols-outlined ${styles.dropdownIcon}  ${styles.filledIcon}`}
+                className={`material-symbols-outlined ${styles.dropdownIcon}  ${styles.filledIcon}`}
               >
                 visibility
               </span>
@@ -173,7 +175,9 @@ const NavigationList = () => {
               </a>
             </DropdownItem>
             <DropdownItem className={styles.dropdownItem}>
-              <span class={`material-symbols-outlined ${styles.dropdownIcon}`}>
+              <span
+                className={`material-symbols-outlined ${styles.dropdownIcon}`}
+              >
                 grid_on
               </span>
               <a href="/" className={styles.dropdownLink}>
@@ -182,7 +186,7 @@ const NavigationList = () => {
             </DropdownItem>
             <DropdownItem className={styles.dropdownItem}>
               <span
-                class={`material-symbols-outlined ${styles.dropdownIcon}  ${styles.filledIcon}`}
+                className={`material-symbols-outlined ${styles.dropdownIcon}  ${styles.filledIcon}`}
               >
                 settings
               </span>
@@ -191,7 +195,9 @@ const NavigationList = () => {
               </a>
             </DropdownItem>
             <DropdownItem className={styles.dropdownItem}>
-              <span class={`material-symbols-outlined ${styles.dropdownIcon}`}>
+              <span
+                className={`material-symbols-outlined ${styles.dropdownIcon}`}
+              >
                 language
               </span>
               <div>
@@ -201,7 +207,7 @@ const NavigationList = () => {
                 <span>
                   en
                   <span
-                    class={`material-symbols-outlined ${styles.dropdownIcon}`}
+                    className={`material-symbols-outlined ${styles.dropdownIcon}`}
                   >
                     arrow_forward_ios
                   </span>
@@ -226,6 +232,35 @@ const NavigationList = () => {
             >
               shopping_cart
             </span>{" "}
+          </a>
+        </li>
+      </ul>
+      <ul className={`${styles.navigationList} ${styles.navigationListMobile}`}>
+        <li>
+          <a href="/" className={styles.navigationLink}>
+            <span
+              className={`material-symbols-outlined ${styles.navigationIcon}`}
+            >
+              search
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="/" className={styles.navigationLink}>
+            <span
+              className={`material-symbols-outlined ${styles.navigationIcon}`}
+            >
+              shopping_cart
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="/" className={styles.navigationLink}>
+            <span
+              className={`material-symbols-outlined ${styles.navigationIcon}`}
+            >
+              reorder
+            </span>
           </a>
         </li>
       </ul>
